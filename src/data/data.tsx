@@ -69,27 +69,19 @@ export type SectionId = (typeof SectionId)[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `I'm Tim Baker.`,
+  name: `I'm Vo Nguyen Thai An.`,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Victoria based <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently working
-        at <strong className="text-stone-100">Instant Domains</strong> helping build a modern, mobile-first, domain
-        registrar and site builder.
-      </p>
-      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, you can catch me training in <strong className="text-stone-100">Muay Thai</strong>,
-        plucking my <strong className="text-stone-100">banjo</strong>, or exploring beautiful{' '}
-        <strong className="text-stone-100">Vancouver Island</strong>.
+        I am a <strong className="text-stone-100">Backend Developer</strong>with nearly 2 years of experience in Web Development, including 5 months of Frontend experience using ReactJS and almost 2 years of expertise in PHP. 
       </p>
     </>
   ),
   actions: [
     {
-      href: '/assets/resume.pdf',
-      text: 'Resume',
+      href: '/assets/CV_Vo_Nguyen_Thai_An_PHP_Developer.pdf',
+      text: 'View My CV',
       primary: true,
-      Icon: ArrowDownTrayIcon,
     },
     {
       href: `#${SectionId.Contact}`,
@@ -108,12 +100,10 @@ export const aboutData: About = {
   to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
   in.`,
   aboutItems: [
-    {label: 'Location', text: 'Victoria, BC', Icon: MapIcon},
-    {label: 'Age', text: '29', Icon: CalendarIcon},
-    {label: 'Nationality', text: 'Canadian / Irish', Icon: FlagIcon},
-    {label: 'Interests', text: 'Motorcycles, Muay Thai, Banjos', Icon: SparklesIcon},
-    {label: 'Study', text: 'University of Victoria', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'Instant Domains, inc.', Icon: BuildingOffice2Icon},
+    {label: 'Location', text: 'Quang Nam, Vietnam', Icon: MapIcon},
+    {label: 'Age', text: '25', Icon: CalendarIcon},
+    {label: 'Interests', text: 'Motorcycles, Youtube, Edit video', Icon: SparklesIcon},
+    {label: 'Study', text: 'Duy Tan University', Icon: AcademicCapIcon},
   ],
 };
 
@@ -122,36 +112,19 @@ export const aboutData: About = {
  */
 export const skills: SkillGroup[] = [
   {
-    name: 'Spoken languages',
-    skills: [
-      {
-        name: 'English',
-        level: 10,
-      },
-      {
-        name: 'French',
-        level: 4,
-      },
-      {
-        name: 'Spanish',
-        level: 3,
-      },
-    ],
-  },
-  {
     name: 'Frontend development',
     skills: [
+      {
+        name: 'HTML/CSS',
+        level: 9,
+      },
       {
         name: 'React',
         level: 9,
       },
       {
-        name: 'Typescript',
+        name: 'JavaScript/TypeScript',
         level: 7,
-      },
-      {
-        name: 'GraphQL',
-        level: 6,
       },
     ],
   },
@@ -159,33 +132,16 @@ export const skills: SkillGroup[] = [
     name: 'Backend development',
     skills: [
       {
-        name: 'Node.js',
+        name: 'PHP',
         level: 8,
       },
       {
-        name: 'Rust',
+        name: 'Laravel',
         level: 5,
       },
       {
-        name: 'Golang',
+        name: 'Symfony',
         level: 4,
-      },
-    ],
-  },
-  {
-    name: 'Mobile development',
-    skills: [
-      {
-        name: 'React Native',
-        level: 9,
-      },
-      {
-        name: 'Flutter',
-        level: 4,
-      },
-      {
-        name: 'Swift',
-        level: 3,
       },
     ],
   },
@@ -268,40 +224,48 @@ export const portfolioItems: PortfolioItem[] = [
  */
 export const education: TimelineItem[] = [
   {
-    date: 'April 2007',
-    location: 'Clown college',
-    title: 'Masters in Beer tasting',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
-  },
-  {
-    date: 'March 2003',
-    location: 'School of Business',
-    title: 'What did you study 101',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    date: '10/2022',
+    location: 'Đa Nang',
+    title: 'DUY TAN UNIVERSITY',
+    content: <p>Major - Software engineering</p>,
   },
 ];
 
 export const experience: TimelineItem[] = [
   {
-    date: 'March 2010 - Present',
-    location: 'Awesome Development Company',
-    title: 'Senior UX Engineer',
+    date: '03/2023 - 01/2025',
+    location: 'Kozocom Vietnam',
+    title: 'Backend Developer',
     content: (
-      <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
-      </p>
-    ),
-  },
-  {
-    date: 'March 2007 - February 2010',
-    location: 'Garage Startup Studio',
-    title: 'Junior bug fixer',
-    content: (
-      <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
-      </p>
+      <>
+        <b>
+          A web application for renting Japanese Kimonos with an in-store booking feature.
+        </b>
+        <p>
+          - Collaborated with PM and the Design Team to define the product roadmap and implemented features based on defined goals.
+        </p>
+        <p>
+          - Migrated data from the previous system to the new version with optimized data integrity and consistency.
+        </p>
+        <p>
+          - Implement payment functionality with GMO Payment Gateway.
+        </p>
+        <p>
+          - Optimized SEO scores and system performance based on Google's guidelines and evaluation tools.
+        </p>
+        <p>
+          - Applied UI/UX designs from Figma to ensure design consistency. 
+        </p>
+        <b>
+         Technologies
+        </b>
+        <p>
+          - Frontend: HTML, CSS, Tailwind, ReactJS
+        </p>
+        <p>
+          - Backend: PHP (Laravel, Ec-Cube)
+        </p>
+      </>
     ),
   },
 ];
@@ -356,7 +320,7 @@ export const contact: ContactSection = {
     {
       type: ContactType.Github,
       text: 'tbakerx',
-      href: 'https://github.com/tbakerx',
+      href: 'https://github.com/Anvo-personal',
     },
   ],
 };
@@ -365,9 +329,5 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/tbakerx'},
-  {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
-  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/timbakerx/'},
-  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/reactresume/'},
-  {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
+  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/Anvo-personal'},
 ];
