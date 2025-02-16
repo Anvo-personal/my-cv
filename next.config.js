@@ -15,6 +15,10 @@ const nextConfig = {
 
     return config;
   },
+  output: "export",
+  experimental: {
+    outputStandalone: true,
+  },
   compress: true,
   generateEtags: true,
   pageExtensions: ['tsx', 'mdx', 'ts'],

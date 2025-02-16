@@ -17,9 +17,9 @@ phases:
             - echo "Copying build files to artifact directory..."
             - mkdir -p artifact
             - cp -r .next/static artifact/
-            - cp -r .next/standalone/* artifact/
             - cp -r public artifact/
             - cp package.json artifact/
+            - if [ -d ".next/standalone" ]; then cp -r .next/standalone/* artifact/; fi
     post_build:
         commands:
             - echo "we are in the post build phase"
