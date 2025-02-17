@@ -15,12 +15,6 @@ phases:
         commands:
             - echo "Building the Next.js app..."
             - yarn build
-            - echo "Copying build files to artifact directory..."
-            - mkdir -p artifact
-            - cp -r .next/static artifact/
-            - cp -r public artifact/
-            - cp package.json artifact/
-            - if [ -d ".next/standalone" ]; then cp -r .next/standalone/* artifact/; fi
     post_build:
         commands:
             - echo "we are in the post build phase"
@@ -28,5 +22,4 @@ phases:
 artifacts:
     files:
         - '**/*'
-    base-directory: artifact
-    discard-paths: no
+    discard-paths: yes
